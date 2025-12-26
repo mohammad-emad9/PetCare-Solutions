@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9C50027-0549-44A9-80FB-968AF8755D41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>bitcINTERFACE</RootNamespace>
+    <AssemblyName>bitcINTERFACE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appointments.Designer.cs">
+      <DependentUpon>appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingRequests.Designer.cs">
+      <DependentUpon>BookingRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medical_records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medical_records.Designer.cs">
+      <DependentUpon>medical_records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner registration.Designer.cs">
+      <DependentUpon>Owner registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetCareSolutionsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PetCareSolutionsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Pets registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pets registration.Designer.cs">
+      <DependentUpon>Pets registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users Form.Designer.cs">
+      <DependentUpon>Users Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veterinarians Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veterinarians Registration.Designer.cs">
+      <DependentUpon>Veterinarians Registration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="appointments.resx">
+      <DependentUpon>appointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingRequests.resx">
+      <DependentUpon>BookingRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medical_records.resx">
+      <DependentUpon>medical_records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner registration.resx">
+      <DependentUpon>Owner registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pets registration.resx">
+      <DependentUpon>Pets registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Users Form.resx">
+      <DependentUpon>Users Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veterinarians Registration.resx">
+      <DependentUpon>Veterinarians Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="PetCareSolutionsDataSet.xsc">
+      <DependentUpon>PetCareSolutionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PetCareSolutionsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PetCareSolutionsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PetCareSolutionsDataSet.xss">
+      <DependentUpon>PetCareSolutionsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-white-background-3d-hd-abstract-vector-image_3099004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workplace-with-blue-office-supplies_23-2147843328.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\workplace-with-blue-office-supplies_23-21478433281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AAA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthcare-and-medical-innovation-background-with-dots-and-lines-molecular-structure-and-hospital-cross-illustration-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-simple-medical-protection-prevention-and-control-prevention-hospital-bulletin-board-theme-image_1513799.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-veterinary-clinic-doctor-examining-png-image_4760886.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-veterinary-clinic-doctor-examining-image_78614.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
