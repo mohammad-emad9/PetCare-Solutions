@@ -9,6 +9,14 @@ A Windows Forms application for pet care booking management, allowing pet owners
 - **Booking Scheduling** - Choose date and time for pet care appointments
 - **SQL Server Integration** - Secure database connectivity
 
+## 📸 Screenshots
+
+### Login Screen
+![Login Screen](screenshots/login_screen.png)
+
+### Booking Screen
+![Booking Screen](screenshots/booking_screen.png)
+
 ## 🛠️ Technology Stack
 
 | Component | Technology |
